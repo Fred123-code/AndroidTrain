@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidTrain</string>
+
+    <!--view string-->
+    <string name="btn_back_str">back main</string>
+    <string name="btn1_str">ffmpeg config</string>
+    <string name="btn2_str">h264 decoder</string>
+    <string name="btn3_str">mediacodec</string>
+    <string name="btn4_str">ffmpeg cmd</string>
+    <string name="btn5_str">openGL + CV</string>
+    <string name="btn6_str">rtmp</string>
+    <string name="btn7_str">plugin activity</string>
+</resources>

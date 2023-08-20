@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="AndroidTrain.app" target="11" />
+      <module name="AndroidTrain.buildSrc" target="1.8" />
+      <module name="AndroidTrain.buildSrc.main" target="1.8" />
+      <module name="AndroidTrain.buildSrc.test" target="1.8" />
+      <module name="AndroidTrain.carapp" target="11" />
+      <module name="AndroidTrain.common" target="11" />
+      <module name="AndroidTrain.ffmpeglib" target="11" />
+      <module name="AndroidTrain.monitor" target="11" />
+      <module name="AndroidTrain.myappframe" target="11" />
+      <module name="AndroidTrain.myopengl" target="11" />
+      <module name="AndroidTrain.opencv" target="11" />
+      <module name="AndroidTrain.rtmplib" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

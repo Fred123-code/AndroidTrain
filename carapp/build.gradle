@@ -1,0 +1,56 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'com.kstudy.plugin.jarxxx'
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        if(isModule.toBoolean()) {
+            applicationId "com.kstudy.carapp"
+        }
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        sourceSets {
+            main {
+                if (isModule.toBoolean()) {
+                    manifest.srcFile "src/main/AndroidManifest.xml"
+                } else {
+                    manifest.srcFile "src/main/AndroidManifest.xml"
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation files('libs\\asm-error.jar')
+    implementation project(path: ':common')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.asynclayoutinflater:asynclayoutinflater:1.0.0'
+    implementation project(path: ':monitor')
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <SurfaceView
+       android:id="@+id/surfaceView1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+   <Button
+       android:id="@+id/btn1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="切换摄像头"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+       android:id="@+id/btn2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="开始直播"
+       app:layout_constraintStart_toEndOf="@+id/btn1"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+       android:id="@+id/btn3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="停止直播"
+       app:layout_constraintStart_toEndOf="@+id/btn2"
+       app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
